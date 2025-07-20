@@ -1,0 +1,38 @@
+{
+    "resourceType": "Patient",
+    "identifier": [
+        {
+            "value": "elpacific.binagha",
+            "system": "https://hgr-virunga.cbcaoffice.org/patients"
+        }
+    ],
+    "gender": "male",
+    "birthDate": "1960-06-30",
+    "name": [
+        {
+            "family": "Binagha",
+            "given": [
+                "El Pacific"
+            ]
+        }
+    ],
+    "telecom": [
+        {
+            "system": "phone",
+            "value": "(03) 5555 6789",
+            "use": "home"
+        }
+    ],
+    "address": [
+        {
+            "line": [
+                "3300 Washtenaw"
+            ],
+            "city": "Ann Harbor",
+            "district": "Washtenaw",
+            "state": "MI",
+            "postalCode": "48104",
+            "country": "US"
+        }
+    ]
+}

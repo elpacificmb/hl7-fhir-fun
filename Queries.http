@@ -1,0 +1,29 @@
+GET http://fhirserver.hl7fundamentals.org/fhir/Patient?_id=65216 HTTP/1.1
+content-type: application/json
+
+###
+
+GET http://fhirserver.hl7fundamentals.org/fhir/Patient?_id=65216 HTTP/1.1
+content-type: application/xml
+
+###
+
+GET http://fhirserver.hl7fundamentals.org/fhir/Patient?identifier=elpacific.binagha HTTP/1.1
+content-type: application/json
+
+###
+
+GET http://fhirserver.hl7fundamentals.org/fhir/Patient?family=Binagha&_sort=-_id HTTP/1.1
+content-type: application/json
+
+###
+
+GET http://fhirserver.hl7fundamentals.org/fhir/Patient?gender=male&birthdate=1960-06-30&given=El%20Pacific HTTP/1.1
+content-type: application/json
+
+###
+
+GET http://fhirserver.hl7fundamentals.org/fhir/Patient?address-country=CD&address-city=Goma&telecom=%28243%29%20993%20818%20236 HTTP/1.1
+content-type: application/json
+
+###

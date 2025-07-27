@@ -1,0 +1,32 @@
+<Patient 
+  xmlns="http://hl7.org/fhir">
+  <id value="65216"/>
+  <meta>
+    <versionId value="2"/>
+    <lastUpdated value="2025-07-27T16:51:18.733+00:00"/>
+    <source value="#TXU7zAkT3bMQsdjh"/>
+  </meta>
+  <identifier>
+    <system value="https://hgr-virunga.cbcaoffice.org/patients"/>
+    <value value="elpacific.binagha"/>
+  </identifier>
+  <name>
+    <family value="Binagha"/>
+    <given value="El Pacific"/>
+  </name>
+  <telecom>
+    <system value="phone"/>
+    <value value="(243) 993 818 236"/>
+    <use value="work"/>
+  </telecom>
+  <gender value="male"/>
+  <birthDate value="1960-06-30"/>
+  <address>
+    <line value="028 Nzumuka James"/>
+    <city value="Goma"/>
+    <district value="Nord-Kivu"/>
+    <state value="DRC"/>
+    <postalCode value="485"/>
+    <country value="CD"/>
+  </address>
+</Patient>

@@ -1,0 +1,32 @@
+<Patient 
+  xmlns="http://hl7.org/fhir">
+  <id value="65216"/>
+  <meta>
+    <versionId value="3"/>
+    <lastUpdated value="2025-07-28T00:18:13.081+00:00"/>
+    <source value="#xhRC4mfvqUlPY2RN"/>
+  </meta>
+  <text>
+    <status value="generated"/>
+    <div 
+      xmlns="http://www.w3.org/1999/xhtml"> El Pacific Binagha Id # elpacific.binagha 
+    </div>
+  </text>
+  <identifier>
+    <system value="https://hgr-virunga.cbcaoffice.org/patients"/>
+    <value value="elpacific.binagha"/>
+  </identifier>
+  <name>
+    <family value="Binagha"/>
+    <given value="El Pacific"/>
+  </name>
+  <address>
+    <line value="028 Nzumuka James"/>
+    <city value="Goma"/>
+    <state value="DRC"/>
+    <country value="CD"/>
+  </address>
+  <managingOrganization>
+    <reference value="Organization/65308"/>
+  </managingOrganization>
+</Patient>

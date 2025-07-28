@@ -1,0 +1,280 @@
+{
+	"resourceType": "Bundle",
+	"type": "transaction",
+	"entry": [
+		{
+			"fullUrl": "urn:uuid:17C7D86E-664F-4FE2-91D7-AF9A8E47311E",
+			"resource": {
+				"resourceType": "Organization",
+				"text": {
+					"status": "generated",
+					"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"> UWEARME - A DIVISION OF HEALTH GIZMOS                        CORP </div>"
+				},
+				"identifier": [
+					{
+						"system": "https://hgr-virunga.cbcaoffice.org/organisations",
+						"value": "UWEARME"
+					}
+				],
+				"name": "UWEARME",
+				"address": [
+					{
+						"line": [
+							"2000 WEARABLE DRIVE"
+						],
+						"city": "ANN ARBOR",
+						"state": "MI",
+						"country": "US"
+					}
+				]
+			},
+			"request": {
+				"method": "PUT",
+				"url": "Organization?identifier=https://hgr-virunga.cbcaoffice.org/organisations|UWEARME"
+			}
+		},
+		{
+			"fullUrl": "urn:uuid:0fc374a1-a226-4552-9683-55dd510e67c9",
+			"resource": {
+				"resourceType": "Patient",
+				"text": {
+					"status": "generated",
+					"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"> El Pacific Binagha Id # elpacific.binagha </div>"
+				},
+				"identifier": [
+					{
+						"system": "https://hgr-virunga.cbcaoffice.org/patients",
+						"value": "elpacific.binagha"
+					}
+				],
+				"name": [
+					{
+						"family": "Binagha",
+						"given": [
+							"El Pacific"
+						]
+					}
+				],
+				"address": [
+					{
+						"line": [
+							"028 Nzumuka James"
+						],
+						"city": "Goma",
+						"state": "DRC",
+						"country": "CD"
+					}
+				],
+				"managingOrganization": {
+					"reference": "urn:uuid:17C7D86E-664F-4FE2-91D7-AF9A8E47311E"
+				}
+			},
+			"request": {
+				"method": "PUT",
+				"url": "Patient?identifier=https://hgr-virunga.cbcaoffice.org/patients|elpacific.binagha"
+			}
+		},
+		{
+			"fullUrl": "urn:uuid:b405c692-54ea-4d0d-afb1-8f91880a3f24",
+			"resource": {
+				"resourceType": "Device",
+				"text": {
+					"status": "generated",
+					"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"> UW Device elpacific.binagha                    </div>"
+				},
+				"identifier": [
+					{
+						"system": "https://hgr-virunga.cbcaoffice.org/devices",
+						"value": "elpacific.binagha"
+					}
+				],
+				"expirationDate": "2020-10-10",
+				"lotNumber": "22222",
+				"modelNumber": "u888800-1",
+				"type": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "33894003",
+							"display": "Experimental Device"
+						}
+					]
+				},
+				"patient": {
+					"reference": "urn:uuid:0fc374a1-a226-4552-9683-55dd510e67c9"
+				},
+				"owner": {
+					"reference": "urn:uuid:17C7D86E-664F-4FE2-91D7-AF9A8E47311E"
+				}
+			},
+			"request": {
+				"method": "PUT",
+				"url": "Device?identifier=https://hgr-virunga.cbcaoffice.org/devices|elpacific.binagha"
+			}
+		},
+		{
+			"fullUrl": "urn:uuid:9b3055be-bb9f-4fce-b5da-599286eb2841",
+			"resource": {
+				"resourceType": "Observation",
+				"text": {
+					"status": "generated",
+					"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"> UW Measure for Pat # elpacific.binagha Respiratory Rate:19/min on 2025-07-27T10:45:00Z </div>"
+				},
+				"identifier": [
+					{
+						"system": "https://hgr-virunga.cbcaoffice.org/measures",
+						"value": "elpacific.binagha-2025-07-27T10:45:00Z-9279-1"
+					}
+				],
+				"status": "final",
+				"code": {
+					"coding": [
+						{
+							"system": "http://loinc.org",
+							"code": "9279-1",
+							"display": "Respiratory Rate"
+						}
+					]
+				},
+				"subject": {
+					"reference": "urn:uuid:0fc374a1-a226-4552-9683-55dd510e67c9"
+				},
+				"effectiveDateTime": "2025-07-27T10:45:00Z",
+				"valueQuantity": {
+					"value": 19,
+					"unit": "/min"
+				},
+				"device": {
+					"reference": "urn:uuid:b405c692-54ea-4d0d-afb1-8f91880a3f24"
+				}
+			},
+			"request": {
+				"method": "POST",
+				"url": "Observation"
+			}
+		},
+		{
+			"fullUrl": "urn:uuid:bf551c01-8aa5-4ace-99d4-ae03a5bc89e7",
+			"resource": {
+				"resourceType": "Observation",
+				"text": {
+					"status": "generated",
+					"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"> UW Measure for Pat # elpacific.binagha Systolic BP: 124mmHg on 2025-07-27T10:45:00Z </div>"
+				},
+				"identifier": [
+					{
+						"system": "https://hgr-virunga.cbcaoffice.org/measures",
+						"value": "elpacific.binagha-2025-07-27T10:45:00Z-8480-6"
+					}
+				],
+				"status": "final",
+				"code": {
+					"coding": [
+						{
+							"system": "http://loinc.org",
+							"code": "8480-6",
+							"display": "Systolic BP"
+						}
+					]
+				},
+				"subject": {
+					"reference": "urn:uuid:0fc374a1-a226-4552-9683-55dd510e67c9"
+				},
+				"effectiveDateTime": "2025-07-27T10:45:00Z",
+				"valueQuantity": {
+                    "value": 124,
+					"unit": "mmHg"
+				},
+				"device": {
+					"reference": "urn:uuid:b405c692-54ea-4d0d-afb1-8f91880a3f24"
+				}
+			},
+			"request": {
+				"method": "POST",
+				"url": "Observation"
+			}
+		},
+		{
+			"fullUrl": "urn:uuid:54e8f280-8f5c-4d63-a174-29a091ecb06a",
+			"resource": {
+				"resourceType": "Observation",
+				"text": {
+					"status": "generated",
+					"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"> UW Measure for Pat # elpacific.binagha Diastolic BP:79mmHg on 2025-07-27T10:45:00Z </div>"
+				},
+				"identifier": [
+					{
+						"system": "https://hgr-virunga.cbcaoffice.org/measures",
+						"value": "elpacific.binagha-2025-07-27T10:45:00Z-8462-4"
+					}
+				],
+				"status": "final",
+				"code": {
+					"coding": [
+						{
+							"system": "http://loinc.org",
+							"code": "8462-4",
+							"display": "Diastolic BP"
+						}
+					]
+				},
+				"subject": {
+					"reference": "urn:uuid:0fc374a1-a226-4552-9683-55dd510e67c9"
+				},
+				"effectiveDateTime": "2025-07-27T10:45:00Z",
+				"valueQuantity": {
+					"value": 79,
+					"unit": "mmHg"
+				},
+				"device": {
+					"reference": "urn:uuid:b405c692-54ea-4d0d-afb1-8f91880a3f24"
+				}
+			},
+			"request": {
+				"method": "POST",
+				"url": "Observation"
+			}
+		},
+		{
+			"fullUrl": "urn:uuid:55c0f3ad-4a2e-4516-8e2c-3db15ed62941",
+			"resource": {
+				"resourceType": "Observation",
+				"text": {
+					"status": "generated",
+					"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"> UW Measure for Pat #elpacific.binagha Heart Rate:                        68/min on 2025-07-27T10:45:00Z </div>"
+				},
+				"identifier": [
+					{
+						"system": "https://hgr-virunga.cbcaoffice.org/measures",
+						"value": "elpacific.binagha-2025-07-27T10:45:00Z-8867-4"
+					}
+				],
+				"status": "final",
+				"code": {
+					"coding": [
+						{
+							"system": "http://loinc.org",
+							"code": "8867-4",
+							"display": "Heart Rate"
+						}
+					]
+				},
+				"subject": {
+					"reference": "urn:uuid:0fc374a1-a226-4552-9683-55dd510e67c9"
+				},
+				"effectiveDateTime": "2025-07-27T10:45:00Z",
+				"valueQuantity": {
+					"value": 68,
+					"unit": "/min"
+				},
+				"device": {
+					"reference": "urn:uuid:b405c692-54ea-4d0d-afb1-8f91880a3f24"
+				}
+			},
+			"request": {
+				"method": "POST",
+				"url": "Observation"
+			}
+		}
+	]
+}

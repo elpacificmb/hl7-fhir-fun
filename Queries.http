@@ -9,6 +9,11 @@ content-type: application/xml
 ###
 
 GET http://fhirserver.hl7fundamentals.org/fhir/Patient?identifier=elpacific.binagha HTTP/1.1
+content-type: application/xml
+
+###
+
+GET http://fhirserver.hl7fundamentals.org/fhir/Patient?identifier=elpacific.binagha HTTP/1.1
 content-type: application/json
 
 ###
@@ -27,3 +32,46 @@ GET http://fhirserver.hl7fundamentals.org/fhir/Patient?address-country=CD&addres
 content-type: application/json
 
 ###
+
+GET http://fhirserver.hl7fundamentals.org/fhir/Patient/65256 HTTP/1.1
+content-type: application/json
+
+###
+
+DELETE http://fhirserver.hl7fundamentals.org/fhir/Patient/65256 HTTP/1.1
+content-type: application/json
+
+###
+
+GET http://fhirserver.hl7fundamentals.org/fhir/Observation?subject=65256 HTTP/1.1
+content-type: application/json
+
+###
+
+DELETE http://fhirserver.hl7fundamentals.org/fhir/Observation/65258 HTTP/1.1
+content-type: application/json
+
+###
+
+DELETE http://fhirserver.hl7fundamentals.org/fhir/Observation/65259 HTTP/1.1
+content-type: application/json
+
+###
+
+DELETE http://fhirserver.hl7fundamentals.org/fhir/Observation/65260 HTTP/1.1
+content-type: application/json
+
+###
+
+DELETE http://fhirserver.hl7fundamentals.org/fhir/Observation/65261 HTTP/1.1
+content-type: application/json
+
+###
+
+DELETE http://fhirserver.hl7fundamentals.org/fhir/Organization?identifier=http://fhirfun2021.org/ids|UWEARME
+content-type: application/json
+
+###
+
+GET http://fhirserver.hl7fundamentals.org/fhir/Observation?subject.identifier=https://hgr-virunga.cbcaoffice.org/patients|elpacific.binagha
+content-type: application/json

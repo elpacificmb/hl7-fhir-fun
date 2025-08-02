@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Practitioner xmlns="http://hl7.org/fhir"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://hl7.org/fhir ../../WEEK_3/R4/fhir-all-xsd/practitioner.xsd">
+    <!-- Profile Declaration -->
+     <meta>
+         <profile value="www.oha.org/pr/fhir/StructureDefinition/OHA-PRAP-Practitioner"></profile>
+     </meta>
+    <!-- Req # OHA.HPR.101.7 -->
+    <text>
+        <status value="generated"></status>
+        <div xmlns="http://www.w3.org/1999/xhtml">
+            Family Name: Gaynor
+            Given Name: Gloria
+            Phone#: +402-772-7777
+            Identifiers: OHAPRID: 429 / NPI: 1234567890
+            Gender: Female
+            Birth Date: 02/13/1958
+            Risk Assessment: Yellow
+        </div>
+    </text>
+    <!-- Req # OHA.HPR.101.5 -->
+    <extension url="http://www.oha.org/pr/fhir/StructureDefinition/oha-rec">
+        <valueCode value="Y"></valueCode>
+    </extension>
+    <!-- Req # OHA.HPR.101.4.a  -->
+    <identifier>
+        <system value="www.oha.org/ohaprid"></system>
+        <value value="429"></value>
+    </identifier>
+    <!-- Req # OHA.HPR.101.4.b  -->
+    <identifier>
+        <system value="http://hl7.org/fhir/sid/us-npi"></system>
+        <value value="1234567890"></value>
+    </identifier>
+    <!-- Req # OHA.HPR.101.3.a:  -->
+    <name>
+        <!-- Req # OHA.HPR.101.3.b:  -->
+        <family value="Gaynor"></family>
+        <!-- Req # OHA.HPR.101.3.a: -->
+        <given value="Gloria"></given>
+        
+    </name>
+    <!-- Req # OHA.HPR.101.6 -->
+    <telecom>
+        <system value="phone"></system>
+        <value value="+402-772-7777"></value>
+    </telecom>
+    <!-- Req # OHA.HPR.101.1:  -->
+    <gender value="female"></gender>
+    <!-- Req # OHA.HPR.101.2:  -->
+    <birthDate value="1958-02-13"></birthDate>
+</Practitioner>

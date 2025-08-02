@@ -1,0 +1,101 @@
+POST http://fhirserver.hl7fundamentals.org/fhir/Patient/$validate
+content-type: application/fhir+json
+
+{
+    "resourceType": "Patient",
+    "id": "PatientAlbertGruollian",
+    "meta": {
+        "profile": [
+            "http://minhealth.gov.bk/core/StructureDefinition/BerzerkistanPatient/"
+        ]
+    },
+    "extension": [
+        {
+            "url": "http://minhealth.gov.bk/core/StructureDefinition/PPHTaxSituation",
+            "valueCode": "X"
+        }
+    ],
+    "identifier": [
+        {
+            "use": "official",
+            "system": "http://www.berzerkistan.gov/bni",
+            "value": "9000031"
+        },
+        {
+            "use": "usual",
+            "system": "http://www.mypatients.gov/number",
+            "value": "23327758999"
+        }
+    ],
+    "name": [
+        {
+            "family": "Gruollian",
+            "given": [
+                "Albert"
+            ]
+        }
+    ],
+    "telecom": [
+        {
+            "system": "phone",
+            "value": "+341155555555"
+        }
+    ],
+    "birthDate": "1922-06-14"
+}
+
+###
+
+POST http://fhirserver.hl7fundamentals.org/fhir/Patient/$validate
+content-type: application/fhir+json
+
+{
+    "resourceType": "Patient",
+    "id": "PatientAlbertGruollian",
+    "meta": {
+        "profile": [
+            "http://minhealth.gov.bk/core/StructureDefinition/BerzerkistanPatient"
+        ]
+    },
+    "text": {
+        "status": "generated",
+        "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Gender: male<br/>Birth Date: 1922-06-14<br/>Given: Albert<br/>Family: Gruollian<br/>BNI: 9000031<br/>NHIB: 23327758999<br/>PPH Tax: M<br/>Phone: +541155555555</div>"
+    },
+    "extension": [
+        {
+            "url": "http://minhealth.gov.bk/core/StructureDefinition/PPHTaxSituation",
+            "valueCode": "M"
+        }
+    ],
+    "identifier": [
+        {
+            "use": "official",
+            "system": "http://www.berzerkistan.gov/bni",
+            "value": "9000031"
+        },
+        {
+            "use": "usual",
+            "system": "http://www.berzerkistan.gov/nhib",
+            "value": "23327758999"
+        }
+    ],
+    "name": [
+        {
+            "family": "Gruollian",
+            "given": [
+                "Albert"
+            ]
+        }
+    ],
+    "telecom": [
+        {
+            "system": "phone",
+            "value": "+541155555555",
+            "use": "mobile"
+        }
+    ],
+    "gender": "male",
+    "birthDate": "1922-06-14"
+}
+
+###
